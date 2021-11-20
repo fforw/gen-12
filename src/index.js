@@ -48,8 +48,9 @@ function randomPoints()
 
 }
 
-const ns = 0.003;
-const ns2 = 0.0005;
+let ns = 0.0006;
+//let ns2 = 0.0005;
+let ns2 = 0.0001;
 const paintPerFrame = 50;
 
 let maxCount;
@@ -163,6 +164,9 @@ domready(
 
             pts = randomPoints();
             copy = pts.slice();
+
+            ns = 0.0005 + Math.pow(Math.random(), 2) * 0.0095;
+            ns2 = 0.0001 + Math.random() * 0.0006;
 
             requestAnimationFrame(anim)
         }
