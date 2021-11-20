@@ -1,3 +1,3 @@
-# Simple Starter
+# gen-12
 
-Simple JS build starter for simple, client-only demos.
+Generates line/swirl graphics based on random color dots and simplex noised used as flow field.
